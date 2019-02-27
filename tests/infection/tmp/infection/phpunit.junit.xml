@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Foo test suite" tests="1" assertions="0" errors="1" failures="0" skipped="0" time="0.097363">
+    <testsuite name="App\Tests\UI\Http\Web\Form\User\RegistrationFormTypeTest" file="/home/pawel/Storage/Projects/infection/error_reproduce/tests/UI/Http/Web/Form/User/RegistrationFormTypeTest.php" tests="1" assertions="0" errors="1" failures="0" skipped="0" time="0.097363">
+      <testcase name="testBuildForm" class="App\Tests\UI\Http\Web\Form\User\RegistrationFormTypeTest" classname="App.Tests.UI.Http.Web.Form.User.RegistrationFormTypeTest" file="/home/pawel/Storage/Projects/infection/error_reproduce/tests/UI/Http/Web/Form/User/RegistrationFormTypeTest.php" line="31" assertions="0" time="0.097363">
+        <error type="Prophecy\Exception\Call\UnexpectedCallException">App\Tests\UI\Http\Web\Form\User\RegistrationFormTypeTest::testBuildForm
+Prophecy\Exception\Call\UnexpectedCallException: Unexpected method call on Double\FormBuilderInterface\P1:
+  - add(
+        "password",
+        "Symfony\Component\Form\Extension\Core\Type\PasswordType",
+        ["constraints" =&gt; [Symfony\Component\Validator\Constraints\NotBlank:000000001048a4dd0000000016dd6b82 Object (
+            'message' =&gt; 'This value should not be blank.'
+            'payload' =&gt; null
+        ), Rollerworks\Component\PasswordStrength\Validator\Constraints\PasswordRequirements:000000001048a5060000000016dd6b82 Object (
+            'tooShortMessage' =&gt; 'Your password must be at least {{length}} characters long.'
+            'missingLettersMessage' =&gt; 'Your password must include at least one letter.'
+            'requireCaseDiffMessage' =&gt; 'Your password must include both upper and lower case letters.'
+            'missingNumbersMessage' =&gt; 'Your password must include at least one number.'
+            'missingSpecialCharacterMessage' =&gt; 'Your password must contain at least one special character.'
+            'minLength' =&gt; 8
+            'requireLetters' =&gt; false
+            'requireCaseDiff' =&gt; true
+            'requireNumbers' =&gt; true
+            'requireSpecialCharacter' =&gt; false
+            'payload' =&gt; null
+        )]]
+    )
+expected calls were:
+  - add(
+        exact("email"),
+        exact("Symfony\Component\Form\Extension\Core\Type\EmailType"),
+        exact(["constraints" =&gt; [Symfony\Component\Validator\Constraints\Email:000000001048a4050000000016dd6b82 Object (
+            'message' =&gt; 'This value is not a valid email address.'
+            'checkMX' =&gt; false
+            'checkHost' =&gt; false
+            'strict' =&gt; null
+            'mode' =&gt; null
+            'payload' =&gt; null
+        )]])
+    )
+  - add(
+        exact("password"),
+        exact("Symfony\Component\Form\Extension\Core\Type\PasswordType"),
+        exact(["constraints" =&gt; [Symfony\Component\Validator\Constraints\NotBlank:000000001048a4c90000000016dd6b82 Object (
+            'message' =&gt; 'This value should not be blank.'
+            'payload' =&gt; null
+        ), Rollerworks\Component\PasswordStrength\Validator\Constraints\PasswordRequirements:000000001048a4cd0000000016dd6b82 Object (
+            'tooShortMessage' =&gt; 'Your password must be at least {{length}} characters long.'
+            'missingLettersMessage' =&gt; 'Your password must include at least one letter.'
+            'requireCaseDiffMessage' =&gt; 'Your password must include both upper and lower case letters.'
+            'missingNumbersMessage' =&gt; 'Your password must include at least one number.'
+            'missingSpecialCharacterMessage' =&gt; 'Your password must contain at least one special character.'
+            'minLength' =&gt; 8
+            'requireLetters' =&gt; true
+            'requireCaseDiff' =&gt; true
+            'requireNumbers' =&gt; true
+            'requireSpecialCharacter' =&gt; false
+            'payload' =&gt; null
+        )]])
+    )
+
+/home/pawel/Storage/Projects/infection/error_reproduce/src/UI/Http/Web/Form/User/RegistrationFormType.php:24
+/home/pawel/Storage/Projects/infection/error_reproduce/tests/UI/Http/Web/Form/User/RegistrationFormTypeTest.php:60
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>

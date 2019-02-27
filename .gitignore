@@ -1,0 +1,12 @@
+###> IDE ###
+/.idea
+###< IDE ###
+
+###> app ###
+/vendor/
+###< app ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###

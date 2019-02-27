@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <build time="Wed Feb 27 9:17:06 GMT+0000 2019" phpunit="6.5.14" coverage="5.3.2">
+    <runtime name="PHP" version="7.3.2-3+ubuntu18.04.1+deb.sury.org+1" url="https://secure.php.net/"/>
+    <driver name="xdebug" version="2.7.0beta1"/>
+  </build>
+  <project source="/home/pawel/Storage/Projects/infection/error_reproduce/src/UI/Http/Web/Form/User">
+    <tests/>
+    <directory name="/">
+      <totals>
+        <lines total="39" comments="0" code="39" executable="7" executed="0" percent="0.00"/>
+        <methods count="2" tested="0" percent="0.00"/>
+        <functions count="0" tested="0" percent="0"/>
+        <classes count="1" tested="0" percent="0.00"/>
+        <traits count="0" tested="0" percent="0"/>
+      </totals>
+      <file name="RegistrationFormType.php" href="RegistrationFormType.php.xml">
+        <totals>
+          <lines total="39" comments="0" code="39" executable="7" executed="0" percent="0.00"/>
+          <methods count="2" tested="0" percent="0.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+    </directory>
+  </project>
+</phpunit>
