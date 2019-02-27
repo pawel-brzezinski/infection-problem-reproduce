@@ -6,7 +6,10 @@
 /vendor/
 ###< app ###
 
-###> symfony/phpunit-bridge ###
+###> tests ###
+.infection.json
 .phpunit
 /phpunit.xml
-###< symfony/phpunit-bridge ###
+/tests/coverage/
+/tests/infection/
+###< tests ###
